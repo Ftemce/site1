@@ -1,0 +1,134 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+	font-family: "Titillium Web";
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content{
+	flex: 1 1 auto;
+}
+.container{
+	max-width: 1100px;
+	margin: 0px auto;
+}
+
+.hi{
+	background: #87509c;
+	height: 596px;
+}
+	.hi__top {
+	display: flex;
+	justify-content:space-between;
+}
+	.hi__logo {
+	margin: 55px 0 0 42px;
+}
+		.hi__img_logo {}
+	.hi__menu {
+		align-items: center;
+		margin: 55px 0 0 0;
+	}
+		.hi__item {
+			display: inline;
+			position: relative;
+			right: 0;
+			top: 50%;
+		}
+		.hi__menu_item {
+				font-size: 16px;
+				color: #ffffff;
+				text-transform: uppercase;
+				padding: 0px 22px;
+			}
+		.hi__menu_item:hover{
+			background: #643a79;
+		}
+
+.hi__bottom {}
+	.hi__title {
+		color: #f7f3ea;
+		font-size: 42px;
+		font-weight: 700;
+		text-align: center;
+		margin: 156px 0 0 0;
+	}
+	.hi__button {
+		margin: 82px 0 173px 0;
+		text-align: center;
+	}
+		.hi__text {
+			color: #ffffff;
+			background-color: #eb7d4b;
+			padding: 28px 81px;
+			box-shadow: 0 -3px #c86a40 inset;
+			transition: 0.2s;
+			border-radius: 3px;
+		}
+		.hi__text:hover{
+			background: #d5713f;
+		}
+		.hi__text:active{
+			background: #c86a40;
+		}
+
+.footer {
+	background: #344b8e;
+}
+.footer__row {
+	display: flex;
+	height: 122px;
+	justify-content:space-evenly;
+	align-items: center;
+}
+.footer__link {}
+.footer__text {
+	font-size: 24px;
+	color: #ffffff;
+}
+a.footer__text:hover{
+	color: #30bae7;
+}
